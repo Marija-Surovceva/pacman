@@ -1,0 +1,128 @@
+
+
+/*Hier definiere ich die Farbe des ganzn Dokumentes.*/
+body {
+    background-color: antiquewhite;
+}
+
+
+/*Hier ist die obere Oberfläche wo man eine Taste und Ergebnise sieht*/
+.navbar {
+    width: 100%; /*Oberfläche soll 100% sein, die ganze Breite */
+    height: 50px;
+    background-color: white;
+    display: flex; /* Nutze Flex um alle Elemente zu zentrieren */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Die Taste um das Speil neu zu starten */
+.reset-game-btn {
+    background-color: rgb(0, 155, 34);
+    border-radius: 10px; /* Mache die Kanten rund */
+    cursor: pointer; /* Füge Pointer-Kursor der Taste zu */
+    box-shadow: none!important; /* Entferne alle Schatten */
+    border: none!important; /* Entferne alle Borders */
+    color: white;
+    font-weight: 700; /*Mache die Schriften dicker */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 35px;
+    margin: 5px; /* Macht Abstand bei allen Seiten des DIV Containers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+
+ /* Ergebnis Container */
+.score-feld {
+    background-color: rgb(243, 147, 3);
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 35px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+ /* Hier greife ich auf Score ID Element damit ich den Abstand zwischen Zahlen und Text kriege */
+#score {
+    margin-left: 2px;
+}
+
+ /* Haupt DIV, was alle Objekte zentriert */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Spielfeld*/
+.feld {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 560px;
+    height: 560px;
+    background-color: rgb(54, 54, 54);
+    border: solid black (0, 0, 0, 0.938);
+}
+  
+.feld div {
+    width: 20px;
+    height: 20px;
+}
+
+/* Pacman Grüner-Punkt */
+.pac-punkt {
+    background-color:chartreuse (255, 166, 0, 0.733);   
+    border: 5px solid green;
+    box-sizing: border-box;
+}
+
+/* Wandfarbe */
+.wand {
+    background-color: pink;
+}
+
+/* Das was Pacman isst */
+.energie {
+    background-color:magenta;
+    border-radius: 5px;
+}
+
+/* Gegner */
+.blinky {
+    background-color:chartreuse;
+}
+
+.pinky {
+    background-color:hotpink;
+}
+
+.inky {
+    background-color:turquoise;
+}
+
+.clyde {
+    background-color:darkorchid;     
+}
+
+.pacman-spieler {
+    background-color:greenyellow;
+    border-radius: 10px;
+}
+
+.scared-geist {
+    background-color:royalblue;
+}
