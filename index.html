@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pacman</title>
+      <!-- Hier binde ich eine CSS Datei mit meiner HTML Datei ein.-->
+    <link rel="stylesheet" href="css/style.css">
+      <!-- Hier binde ich die JS-Datei mit allen Funkionen mit meiner HTML Datei ein.-->
+    <script src = "js/index.js"></script>
+  </head>
+<body>
+  <!--Hier ist navbar DIV, da befindet sich eine Reset Game taste und Ergebnis Zähler.-->
+    <div class="navbar">
+        <!--Hier nutze ich Paramater onClick und so führe ich meine Funktion diret aus-->
+      <button id="reset-game" onCLick="resetGame()" class="reset-game-btn">
+        Neu starten
+      </button>
+      <!--Zähler DIV-->
+       <div class="score-feld">
+       <!-- Ergebnis-Zähler, ich nutze span weil DIV im Vergleich mit Span ein Block-Container ist, Span nimmt keinen unnötigen Platz -->
+       </span>Ergebnis: <span  id="score"></span></div>
+       </div>
+    </div>
+    <!--Hier ist ein Haupt-Container, dem gebe ich Flex-Werte damit es sich in der Mitte befindet -->
+    <div class="main-container">
+      <!-- Hier ist ein DIV, das eine Klasse "Feld" hat, es ist das gesamte "Fenster" in dem Spiel läuft .-->
+      <div class="feld"></div>
+    </div>
+</body>
+</html>
+
+
+  
